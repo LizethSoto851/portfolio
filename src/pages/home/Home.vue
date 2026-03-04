@@ -24,11 +24,14 @@ import stickerMusica from "../../assets/images/stickers/musica.png"
   <img :src="pincha" alt="Pinza" class="w-16 h-16 -mb-4 z-10" />
 
   <!-- Foto -->
+   <RouterLink to="/sobre-mi">
   <img
     :src="myPhoto"
     alt="Michelle"
     class=" w-32 h-32 object-cover border-4 border-white shadow-lg"
   />
+  </RouterLink>
+
 </div>
 <!-- Pegatina animación -->
  <RouterLink to="/animacion">
