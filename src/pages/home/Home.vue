@@ -2,13 +2,17 @@
 import corkBg from "../../assets/images/corcho.jpg"
 import myPhoto from "../../assets/images/miFoto.jpg"
 import pincha from "../../assets/images/pinchita.png"
-</script>
+import stickerAnimacion from "../../assets/images/stickers/animacion.png"
+import stickerDiseno from "../../assets/images/stickers/diseno.png"
+import stickerCafe from "../../assets/images/stickers/cafe.png"
+import stickerMusica from "../../assets/images/stickers/musica.png"
+</script>import { RouterLink } from 'vue-router'
 
 <template>
   <section class="min-h-screen bg-pink-100 flex items-center justify-center">
 
     <!-- Tablero de corcho -->
-    <div class="relative w-full max-w-8xl h-[90vh] sm:h-[80vh]">
+    <div class="relative w-[70%] max-w-6xl aspect-2520/1721 overflow-visible">
       <img
         :src="corkBg"
         alt="Tablero de corcho"
@@ -26,6 +30,29 @@ import pincha from "../../assets/images/pinchita.png"
     class=" w-32 h-32 object-cover border-4 border-white shadow-lg"
   />
 </div>
+<!-- Pegatina animación -->
+<img
+  :src="stickerAnimacion"
+  class="absolute top-16 right-20 w-32 rotate-[8deg] hover:scale-110 transition duration-300 cursor-pointer"
+/>
+
+<!-- Pegatina diseño -->
+<img
+  :src="stickerDiseno"
+  class="absolute bottom-24 left-24 w-36 rotate-[-60deg] hover:scale-110 transition duration-300 cursor-pointer"
+/>
+
+<!-- Pegatina café -->
+<img
+  :src="stickerCafe"
+  class="absolute top-40 left-40 w-30 rotate-[5deg]hover:scale-110 transition duration-300 cursor-pointer"
+/>
+
+<!-- Pegatina música -->
+<img
+  :src="stickerMusica"
+  class="absolute bottom-32 right-32 w-28 hover:scale-110 transition duration-300 cursor-pointer"
+/>
 
       <!-- Nombre y frase debajo -->
       <div class="absolute bottom-6 w-full flex flex-col items-center">
