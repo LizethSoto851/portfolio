@@ -31,28 +31,36 @@ import stickerMusica from "../../assets/images/stickers/musica.png"
   />
 </div>
 <!-- Pegatina animación -->
+ <RouterLink to="/animacion">
 <img
   :src="stickerAnimacion"
   class="absolute top-16 right-20 w-32 rotate-[8deg] hover:scale-110 transition duration-300 cursor-pointer"
 />
+</RouterLink>
 
 <!-- Pegatina diseño -->
+ <RouterLink to="/diseno">
 <img
   :src="stickerDiseno"
   class="absolute bottom-24 left-24 w-36 rotate-[-60deg] hover:scale-110 transition duration-300 cursor-pointer"
 />
+</RouterLink>
 
 <!-- Pegatina café -->
+ <RouterLink to="/cafe">
 <img
   :src="stickerCafe"
-  class="absolute top-40 left-40 w-30 rotate-[5deg]hover:scale-110 transition duration-300 cursor-pointer"
+  class="absolute top-40 left-40 w-32 rotate-[5deg] hover:scale-110 transition duration-300 cursor-pointer"
 />
+</RouterLink>
 
 <!-- Pegatina música -->
+ <RouterLink to="/musica">
 <img
   :src="stickerMusica"
   class="absolute bottom-32 right-32 w-28 hover:scale-110 transition duration-300 cursor-pointer"
 />
+</RouterLink>
 
       <!-- Nombre y frase debajo -->
       <div class="absolute bottom-6 w-full flex flex-col items-center">
