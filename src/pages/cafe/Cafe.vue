@@ -1,11 +1,16 @@
 <script setup lang="ts">
-
+import BackHome from '@/components/BackHome.vue'
 </script>
 
+
 <template>
-    <div class="min-h-screen bg-pink-100 flex items-center justify-center">
-    <h1 class="text-4xl font-bold">Página de no se que</h1>
-  </div>
+  <section class="min-h-screen bg-blue-100 flex flex-col items-center p-6">
+    <BackHome />
+
+    <h1 class="text-4xl font-bold mb-6">Pintura</h1>
+
+  
+  </section>
 </template>
 
 
