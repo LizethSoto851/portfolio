@@ -4,10 +4,8 @@ import { RouterLink } from 'vue-router'
 import corkBg from "../../assets/images/corcho.jpg"
 import myPhoto from "../../assets/images/miFoto.jpg"
 import pincha from "../../assets/images/pinchita.png"
-import stickerAnimacion from "../../assets/images/stickers/animacion.png"
-import stickerDiseno from "../../assets/images/stickers/diseno.png"
-import stickerCafe from "../../assets/images/stickers/cafe.png"
-import stickerMusica from "../../assets/images/stickers/musica.png"
+import stickerContacto from "../../assets/images/stickers/contacto.png"
+import stickerGallery from "../../assets/images/stickers/gallery.png"
 import { ChevronDown } from "lucide-vue-next"
 import { Mail, Instagram } from "lucide-vue-next"
 </script>
@@ -64,33 +62,21 @@ import { Mail, Instagram } from "lucide-vue-next"
 
       <!-- PEGATINAS -->
 
-      <RouterLink to="/animacion">
+      <RouterLink to="/contacto">
         <img
-          :src="stickerAnimacion"
+          :src="stickerContacto"
           class="absolute top-16 right-20 w-32 rotate-[8deg] hover:scale-110 transition duration-300 cursor-pointer"
         />
       </RouterLink>
 
-      <RouterLink to="/diseno">
+      <RouterLink to="/gallery">
         <img
-          :src="stickerDiseno"
+          :src="stickerGallery"
           class="absolute bottom-24 left-24 w-36 rotate-[-60deg] hover:scale-110 transition duration-300 cursor-pointer"
         />
       </RouterLink>
 
-      <RouterLink to="/cafe">
-        <img
-          :src="stickerCafe"
-          class="absolute top-40 left-40 w-32 rotate-[5deg] hover:scale-110 transition duration-300 cursor-pointer"
-        />
-      </RouterLink>
-
-      <RouterLink to="/musica">
-        <img
-          :src="stickerMusica"
-          class="absolute bottom-32 right-32 w-28 hover:scale-110 transition duration-300 cursor-pointer"
-        />
-      </RouterLink>
+     
 
 
       <!-- NOMBRE -->

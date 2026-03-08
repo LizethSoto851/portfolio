@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ChevronLeft } from "lucide-vue-next"
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
