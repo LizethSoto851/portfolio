@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BackHome from '@/components/BackHome.vue';
+
 </script>
 
 <template>
@@ -12,7 +13,7 @@ import BackHome from '@/components/BackHome.vue';
       <!-- Foto y presentación -->
       <div class="flex flex-col md:flex-row items-center md:items-start gap-6 max-w-4xl">
         <img
-          src="@/assets/images/miFoto.jpg"
+          src="/images/miFoto.jpg"
           alt="Michelle"
           class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg"
         />
@@ -28,7 +29,7 @@ import BackHome from '@/components/BackHome.vue';
         </div>
       </div>
 
-      <!-- Sección habilidades -->
+     
       <div class="mt-12 w-full max-w-4xl">
         <h2 class="text-2xl font-semibold mb-4">Habilidades</h2>
         <ul class="flex flex-wrap gap-4">

@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 
-import corkBg from "../../assets/images/corcho.jpg"
-import myPhoto from "../../assets/images/miFoto.jpg"
-import pincha from "../../assets/images/pinchita.png"
-import stickerContacto from "../../assets/images/stickers/contacto.png"
-import stickerGallery from "../../assets/images/stickers/gallery.png"
+import corkBg from "/images/corcho.jpg"
+import myPhoto from "/images/miFoto.jpg"
+import pincha from "/images/pinchita.png"
+import stickerContacto from "/stickers/contacto.png"
+import stickerGallery from "/stickers/gallery.png"
 import { ChevronDown } from "lucide-vue-next"
 import { Mail, Instagram } from "lucide-vue-next"
 </script>

@@ -7,10 +7,10 @@ export const router = createRouter({
   routes: [
     { path: '/', name: 'home', component: Home },
 
-    // Páginas de pegatinas
+   
     { path: '/contacto', name: 'contacto', component: () => import('@/pages/contacto/Contacto.vue') },
     
-    // Galería con rutas anidadas
+    
     {
       path: '/gallery',
       name: 'gallery',
@@ -20,14 +20,14 @@ export const router = createRouter({
         { path: 'ilustracion', name: 'ilustracion', component: () => import('@/pages/gallery/secciones/Ilustracion.vue') },
         { path: 'animacion', name: 'animacion', component: () => import('@/pages/gallery/secciones/Animacion.vue') },
 
-        // Trabajos individuales
+       
         { path: ':familia/:id', name: 'trabajo', component: () => import('@/pages/gallery/trabajos/TrabajoIndividual.vue') },
       ]
     },
 
     { path: '/sobre-mi', name: 'sobre-mi', component: () => import('@/pages/sobre-mi/SobreMi.vue') },
 
-    // Catch-all
+    
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ]
 })
