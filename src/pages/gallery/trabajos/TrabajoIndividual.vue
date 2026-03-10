@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import BackHome from '@/components/BackHome.vue'
 import { trabajos } from '../data'
+import BackGallery from '@/components/BackGallery.vue'
 
 const route = useRoute()
 
@@ -13,7 +13,7 @@ const trabajo = trabajos.find(t => t.id === id)
 <template>
   <div class="min-h-screen bg-gray-100 p-10">
 
-    <BackHome/>
+    <BackGallery/>
 
   <div v-if="trabajo" class="max-w-4xl mx-auto">
 
