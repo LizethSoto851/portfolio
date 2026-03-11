@@ -15,37 +15,41 @@ const trabajo = trabajos.find(t => t.id === id)
 
     <BackGallery/>
 
-  <div v-if="trabajo" class="max-w-4xl mx-auto">
+    <div v-if="trabajo" class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8">
 
+      <!-- Columna de imagen -->
+      <div class="md:w-1/2 flex flex-col gap-4">
 
-    <h1 class="text-4xl font-bold mb-4 text-center">
-      {{ trabajo.titulo }}
-    </h1>
-    
-    <p class="text-center text-gray-600 mb-10">
-      {{ trabajo.familia }}
-    </p>
+        <!-- Imagen principal -->
+        <img
+          :src="trabajo.imagen"
+          class="w-full rounded-xl shadow-lg"
+        />
 
-    <img
-    :src="trabajo.imagen"
-    class="w-full rounded-xl shadow-lg mb-5"
-    />
+        <!-- Imágenes extra debajo -->
+        <div v-if="trabajo.imagenesExtra && trabajo.imagenesExtra.length" class="grid grid-cols-2 gap-4 mt-2">
+          <img
+            v-for="(img, index) in trabajo.imagenesExtra"
+            :key="index"
+            :src="img"
+            class="w-full rounded-lg shadow"
+          />
+        </div>
+      </div>
 
-    <p class="text-lg mb-10 text-center">
-      {{ trabajo.descripcion }}
-    </p>
-
-    <div v-if="trabajo.imagenesExtra" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-      <img
-      v-for="(img, index) in trabajo.imagenesExtra"
-      :key="index"
-      :src="img"
-      class="w-full rounded-lg shadow"
-      />
+      <!-- Columna de texto -->
+      <div class="md:w-1/2 flex flex-col justify-start">
+        <h1 class="text-4xl font-bold mb-4">
+          {{ trabajo.titulo }}
+        </h1>
+        <p class="text-gray-600 mb-6 font-medium">
+          {{ trabajo.familia }}
+        </p>
+        <p class="text-lg">
+          {{ trabajo.descripcion }}
+        </p>
+      </div>
 
     </div>
-
-  </div>
   </div>
 </template>
